@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+
+body{
+    font-family: var(--Quicksand);
+    color: white;
+}
+
+.header {
+    background: var(--dark);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 2em;
+    font-family: var(--Playfair);
+}
+.header .navbar{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    float: right;
+}
+.header .navbar .nav-mobile {
+    display: none;
+}
+.header .navbar .item-navbar {
+    text-decoration: none;
+    color: white;
+    background: red;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .navbar .menu-mobile {
+    float: right;
+}
+
+.header .navbar .menu-mobile img {
+    width: 30px;
+    color: white;
+}
