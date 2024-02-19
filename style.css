@@ -29,20 +29,23 @@ body{
     position: absolute;
     top: 15px;
     right: 15px;
-    float: right;
 }
 .header .navbar .nav-mobile {
     display: none;
+    width: 300px;
+    height: 100vh;
+    background: var(--exDark);
+    position: relative;
 }
+
+
 .header .navbar .item-navbar {
     text-decoration: none;
     color: white;
-    background: red;
-    width: 150px;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 .header .navbar .menu-mobile {
     float: right;
@@ -51,4 +54,9 @@ body{
 .header .navbar .menu-mobile img {
     width: 30px;
     color: white;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
 }
