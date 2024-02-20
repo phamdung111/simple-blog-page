@@ -337,3 +337,68 @@ body {
     gap: 2rem
   }
 }
+
+@media screen and (min-width: 992px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .logo {
+    padding-left: 30px;
+  }
+  .header .navbar {
+    position: relative;
+    top: 0;
+  }
+
+  .menu-mobile {
+    visibility: hidden;
+  }
+  section {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  .menu-tablet {
+    display: flex;
+    align-items: center;
+  }
+  .header .navbar .menu-tablet a {
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+  }
+  .design .container .design-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .blog .blog-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem
+  }
+  .about .container {
+    display: flex;
+    gap: 2rem;
+  }
+  .about .container .about-text {
+    width: 50%;
+  }
+
+  .about .container .about-text p {
+    text-align: left;
+  }
+
+  .about .container .about-text .about-title {
+    text-align: center !important;
+  }
+}
