@@ -1,62 +1,275 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
-:root{
-    --Playfair: 'Playfair Display', serif;
-    --Quicksand: 'Quicksand', sans-serif;
-    --Roboto: 'Roboto', sans-serif;
-    --dark: #3c393d;
-    --exDark: #2b2b2b;
+:root {
+  --Playfair: "Playfair Display", serif;
+  --Quicksand: "Quicksand", sans-serif;
+  --Roboto: "Roboto", sans-serif;
+  --dark: #3c393d;
+  --exDark: #2b2b2b;
+  --white: #fff;
 }
 
-body{
-    font-family: var(--Quicksand);
-    color: white;
+body {
+  font-family: var(--Quicksand);
+  color: var(--dark);
 }
 
 .header {
-    background: var(--dark);
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: var(--dark);
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header .logo {
-    font-size: 2em;
-    font-family: var(--Playfair);
+  font-size: 2em;
+  font-family: var(--Playfair);
+  color: var(--white);
 }
-.header .navbar{
-    position: absolute;
-    top: 15px;
-    right: 15px;
+.header .navbar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 .header .navbar .nav-mobile {
-    display: none;
-    width: 300px;
-    height: 100vh;
-    background: var(--exDark);
-    position: relative;
+  display: none;
+  width: 300px;
+  height: 100vh;
+  background: var(--exDark);
+  position: relative;
 }
-
 
 .header .navbar .item-navbar {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
 }
 .header .navbar .menu-mobile {
-    float: right;
+  float: right;
 }
 
 .header .navbar .menu-mobile img {
-    width: 30px;
-    color: white;
-    float: right;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
+  width: 30px;
+  color: var(--white);
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.banner {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/banner-bg.jpg) center/cover no-repeat fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--Playfair);
+}
+
+.banner .banner-content {
+  display: grid;
+  max-width: 1320px;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .banner-content div {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: var(--Playfair);
+}
+
+.banner .banner-content div h3:first-child {
+  color: var(--exDark);
+}
+.banner .banner-content div h3:nth-child(2) {
+  color: var(--white);
+}
+
+.banner .banner-content p {
+  font-size: 1.2rem;
+  font-family: var(--Roboto);
+  font-weight: 300;
+  color: var(--white);
+  margin: 16px;
+}
+
+.banner .banner-content .banner-search {
+  background: var(--white);
+  margin-top: 1.4rem;
+  padding: 1.2rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner .banner-content .banner-search input {
+  border: none;
+  font-size: 22px;
+  outline: 0;
+}
+
+.banner .banner-content .banner-search button {
+  border: none;
+  background: var(--white);
+  font-size: 22px;
+}
+.design {
+  margin-top: 60px;
+}
+.design .container {
+  padding: 0 1.2rem;
+  text-align: center;
+}
+
+.design .container .title h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 10px;
+}
+.design .container .design-item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.design .container .design-item .design-img {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.design .container .design-item .design-img img {
+  display: block;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.design .container .design-item .design-title {
+  margin: 20px 0 60px 0;
+}
+.design .container .design-item .design-title a {
+  text-decoration: none;
+  font-family: var(--Roboto);
+  color: var(--dark);
+  font-size: 22px;
+}
+.blog {
+  background: #f9f9f9;
+  font-family: var(--Playfair);
+  padding: 4.5rem 0;
+}
+.blog .blog-title {
+  text-align: center;
+  padding-top: 40px;
+}
+.blog .blog-title h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.blog .blog-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blog .blog-item .blog-item-title {
+  padding: 0 20px;
+  margin: 2.2rem 0;
+}
+
+.blog .blog-item .blog-item-title h3 {
+  font-size: 1.65rem;
+  padding: 1rem 0;
+  font-family: var(--Playfair);
+  font-weight: 500;
+}
+.blog .blog-item .blog-item-title p {
+  opacity: 0.9;
+  padding-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+.blog .blog-item .blog-item-title a {
+  font-family: var(--Roboto);
+  font-size: 1.1rem;
+  text-decoration: none;
+  background: var(--dark);
+  display: inline-block;
+  padding: 0.55rem 1.2rem;
+  transition: all 0.5s ease;
+  color: var(--white);
+}
+.blog .blog-item .blog-item-title a:hover {
+  background: var(--exDark);
+}
+.about {
+  padding: 4.5rem 0;
+}
+
+.about .container .about-img img {
+  width: 100%;
+}
+
+.about .container .about-text {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.about .container .about-text .about-title h2 {
+  font-size: 2.4rem;
+  margin: 20px;
+  font-family: var(--Playfair);
+}
+
+.about .container .about-text p {
+  font-size: 1.1rem;
+  padding: 0.6rem 0;
+  opacity: 0.8;
+}
+.footer {
+  padding: 2rem 0;
+  background: var(--exDark);
+  color: var(--white);
+}
+
+.footer .container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .container .icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer .container .icons a {
+  text-decoration: none;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  color: var(--white);
+  background: linear-gradient(to right, var(--white) 50%, var(--exDark) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.footer .container .icons a:hover {
+  background-position: left bottom;
+  color: var(--exDark);
+}
+.footer .container .title {
+  text-align: center;
 }
